@@ -17,7 +17,7 @@
   "bugs": {
     "url": "https://github.com/marilynpb/PrimerEntrega-ProyectoFinal/issues"
   },
-  "homepage": "https://github.com/marilynpb/PrimerEntrega-ProyectoFinal#readme",
+  "homepage": "https://proyectofinalglumy-production.up.railway.app",
   "dependencies": {
     "@handlebars/allow-prototype-access": "^1.0.5",
     "aos": "^2.3.4",
