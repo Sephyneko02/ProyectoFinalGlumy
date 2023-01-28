@@ -227,7 +227,7 @@ const imprimirBasico = async(req, res)=>{
 
     const userImg = await User.findById(req.user.id)
     let nombreIMG = user.imagen
-    const relativePath = `http://localhost:3000/img/perfiles/${nombreIMG}`;
+    const relativePath = `https://proyectofinalglumy-production.up.railway.app/img/perfiles/${nombreIMG}`;
     const absolutePath = path.resolve(relativePath);
     
     //Compilacion puppeter con hbs
@@ -250,7 +250,7 @@ const imprimirBasico = async(req, res)=>{
             format: 'A4',
             printBackground: true,
             })
-            res.redirect(`http://localhost:3000/pdfs/${req.user.id}.pdf`)
+            res.redirect(`https://proyectofinalglumy-production.up.railway.app/pdfs/${req.user.id}.pdf`)
         }
         catch(error){
             req.flash("mensajes", [{msg: "Hubo un error al crear al crear el PDF"}])
@@ -267,7 +267,7 @@ const imprimirCreativo1= async(req, res)=>{
 
     const userImg = await User.findById(req.user.id)
     let nombreIMG = user.imagen
-    const relativePath = `http://localhost:3000/img/perfiles/${nombreIMG}`;
+    const relativePath = `https://proyectofinalglumy-production.up.railway.app/img/perfiles/${nombreIMG}`;
     const absolutePath = path.resolve(relativePath);
 
     //Compilacion puppeter con hbs
@@ -289,7 +289,7 @@ const imprimirCreativo1= async(req, res)=>{
             format: 'A4',
             printBackground: true,
             })
-            res.redirect(`http://localhost:3000/pdfs/${req.user.id}.pdf`)
+            res.redirect(`https://proyectofinalglumy-production.up.railway.app/pdfs/${req.user.id}.pdf`)
         }
         catch(error){
             req.flash("mensajes", [{msg: "Hubo un error al crear al crear el PDF"}])
@@ -306,7 +306,7 @@ const imprimirModerno1 = async(req, res)=>{
 
     const userImg = await User.findById(req.user.id)
     let nombreIMG = user.imagen
-    const relativePath = `http://localhost:3000/img/perfiles/${nombreIMG}`;
+    const relativePath = `https://proyectofinalglumy-production.up.railway.app/img/perfiles/${nombreIMG}`;
     const absolutePath = path.resolve(relativePath);
 
     //Compilacion puppeter con hbs
@@ -328,7 +328,7 @@ const imprimirModerno1 = async(req, res)=>{
             format: 'A4',
             printBackground: true,
             })
-            res.redirect(`http://localhost:3000/pdfs/${req.user.id}.pdf`)
+            res.redirect(`https://proyectofinalglumy-production.up.railway.app/pdfs/${req.user.id}.pdf`)
         }
         catch(error){
             req.flash("mensajes", [{msg: "Hubo un error al crear al crear el PDF"}])
@@ -345,7 +345,7 @@ const imprimirCronologico = async(req, res)=>{
 
     const userImg = await User.findById(req.user.id)
     let nombreIMG = user.imagen
-    const relativePath = `http://localhost:3000/img/perfiles/${nombreIMG}`;
+    const relativePath = `https://proyectofinalglumy-production.up.railway.app/img/perfiles/${nombreIMG}`;
     const absolutePath = path.resolve(relativePath);
 
     //Compilacion puppeter con hbs
@@ -367,7 +367,7 @@ const imprimirCronologico = async(req, res)=>{
             format: 'A4',
             printBackground: true,
             })
-            res.redirect(`http://localhost:3000/pdfs/${req.user.id}.pdf`)
+            res.redirect(`https://proyectofinalglumy-production.up.railway.app/pdfs/${req.user.id}.pdf`)
         }
         catch(error){
             req.flash("mensajes", [{msg: "Hubo un error al crear al crear el PDF"}])
@@ -384,7 +384,7 @@ const imprimirFuncional = async(req, res)=>{
 
     const userImg = await User.findById(req.user.id)
     let nombreIMG = user.imagen
-    const relativePath = `http://localhost:3000/img/perfiles/${nombreIMG}`;
+    const relativePath = `https://proyectofinalglumy-production.up.railway.app/img/perfiles/${nombreIMG}`;
     const absolutePath = path.resolve(relativePath);
 
     //Compilacion puppeter con hbs
@@ -406,7 +406,7 @@ const imprimirFuncional = async(req, res)=>{
             format: 'A4',
             printBackground: true,
             })
-            res.redirect(`http://localhost:3000/pdfs/${req.user.id}.pdf`)
+            res.redirect(`https://proyectofinalglumy-production.up.railway.app/pdfs/${req.user.id}.pdf`)
         }
         catch(error){
             req.flash("mensajes", [{msg: "Hubo un error al crear al crear el PDF"}])
@@ -423,7 +423,7 @@ const imprimirMixto = async(req, res)=>{
 
     const userImg = await User.findById(req.user.id)
     let nombreIMG = user.imagen
-    const relativePath = `http://localhost:3000/img/perfiles/${nombreIMG}`;
+    const relativePath = `https://proyectofinalglumy-production.up.railway.app/img/perfiles/${nombreIMG}`;
     const absolutePath = path.resolve(relativePath);
 
     //Compilacion puppeter con hbs
@@ -445,7 +445,7 @@ const imprimirMixto = async(req, res)=>{
             format: 'A4',
             printBackground: true,
             })
-            res.redirect(`http://localhost:3000/pdfs/${req.user.id}.pdf`)
+            res.redirect(`https://proyectofinalglumy-production.up.railway.app/pdfs/${req.user.id}.pdf`)
         }
         catch(error){
             req.flash("mensajes", [{msg: "Hubo un error al crear al crear el PDF"}])
@@ -462,7 +462,7 @@ const imprimirModerno2 = async(req, res)=>{
 
     const userImg = await User.findById(req.user.id)
     let nombreIMG = user.imagen
-    const relativePath = `http://localhost:3000/img/perfiles/${nombreIMG}`;
+    const relativePath = `https://proyectofinalglumy-production.up.railway.app/img/perfiles/${nombreIMG}`;
     const absolutePath = path.resolve(relativePath);
 
     //Compilacion puppeter con hbs
@@ -484,7 +484,7 @@ const imprimirModerno2 = async(req, res)=>{
             format: 'A4',
             printBackground: true,
             })
-            res.redirect(`http://localhost:3000/pdfs/${req.user.id}.pdf`)
+            res.redirect(`https://proyectofinalglumy-production.up.railway.app/pdfs/${req.user.id}.pdf`)
         }
         catch(error){
             req.flash("mensajes", [{msg: "Hubo un error al crear al crear el PDF"}])
@@ -501,7 +501,7 @@ const imprimirCreativo2 = async(req, res)=>{
 
     const userImg = await User.findById(req.user.id)
     let nombreIMG = user.imagen
-    const relativePath = `http://localhost:3000/img/perfiles/${nombreIMG}`;
+    const relativePath = `https://proyectofinalglumy-production.up.railway.app/img/perfiles/${nombreIMG}`;
     const absolutePath = path.resolve(relativePath);
 
     //Compilacion puppeter con hbs
@@ -523,7 +523,7 @@ const imprimirCreativo2 = async(req, res)=>{
             format: 'A4',
             printBackground: true,
             })
-            res.redirect(`http://localhost:3000/pdfs/${req.user.id}.pdf`)
+            res.redirect(`https://proyectofinalglumy-production.up.railway.app/pdfs/${req.user.id}.pdf`)
         }
         catch(error){
             req.flash("mensajes", [{msg: "Hubo un error al crear al crear el PDF"}])
@@ -540,7 +540,7 @@ const imprimirModerno3= async(req, res)=>{
 
     const userImg = await User.findById(req.user.id)
     let nombreIMG = user.imagen
-    const relativePath = `http://localhost:3000/img/perfiles/${nombreIMG}`;
+    const relativePath = `https://proyectofinalglumy-production.up.railway.app/img/perfiles/${nombreIMG}`;
     const absolutePath = path.resolve(relativePath);
     
     //Compilacion puppeter con hbs
@@ -562,7 +562,7 @@ const imprimirModerno3= async(req, res)=>{
             format: 'A4',
             printBackground: true,
             })
-            res.redirect(`http://localhost:3000/pdfs/${req.user.id}.pdf`)
+            res.redirect(`https://proyectofinalglumy-production.up.railway.app/pdfs/${req.user.id}.pdf`)
         }
         catch(error){
             req.flash("mensajes", [{msg: "Hubo un error al crear al crear el PDF"}])
