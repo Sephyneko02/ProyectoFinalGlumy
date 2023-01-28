@@ -60,7 +60,7 @@ const registerUser = async(req, res)=>{
             html: `<h4>Gracias por registrarte en FreeCVMaker<h4/>
                     <h4>Ya casi podés comenzar a crear tu CV, primero activá tu cuenta.</h4>
                     <p>Para activar tu cuenta necesitamos que valides tu correo electrónico haciendo click aquí:</p>
-                    <a href="http://localhost:3000/auth/confirmar/${user.tokenConfirm}">Verificar cuenta</a>
+                    <a href="https://proyectofinalglumy-production.up.railway.app/auth/confirmar/${user.tokenConfirm}">Verificar cuenta</a>
                     <br><br><p>Atentamente,</p><p>Equipo FreeCVMaker!💖</p>`,
         });
 
@@ -170,7 +170,7 @@ const enviarResetPass = async(req, res)=>{
             html: `<h4>FreeCVMaker<h4>
                     <h4>Reestablecé tu contraseña<h4>
                     <p>Para hacerlo hacé click aquí:</p>
-                    <a href="http://localhost:3000/auth/reestablecerPassword/${user._id}">Reestablecer mi contraseña</a>
+                    <a href="https://proyectofinalglumy-production.up.railway.app/auth/reestablecerPassword/${user._id}">Reestablecer mi contraseña</a>
                     <br><br><p>Atentamente,</p><p>Equipo FreeCVMaker!💖</p>`,
         });
 
