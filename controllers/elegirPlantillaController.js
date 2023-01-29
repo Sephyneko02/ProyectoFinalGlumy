@@ -281,7 +281,7 @@ const imprimirCreativo1= async(req, res)=>{
     const puppeter = require('puppeteer');
     (async function(){
         try{
-            const browser = await puppeter.launch()
+            const browser = await puppeter.launch({ args: ['--no-sandbox'] })
             const page = await browser.newPage()
             const content = await compile('creativo1PDF', ({personal : personal, laboralData: laboralData, user: user, descripcionData: descripcionData, userImg: userImg, imagen: absolutePath}))
             await page.setContent(content)
@@ -320,7 +320,7 @@ const imprimirModerno1 = async(req, res)=>{
     const puppeter = require('puppeteer');
     (async function(){
         try{
-            const browser = await puppeter.launch()
+            const browser = await puppeter.launch({ args: ['--no-sandbox'] })
             const page = await browser.newPage()
             const content = await compile('moderno1PDF', ({personal : personal, laboralData: laboralData, user: user, descripcionData: descripcionData, userImg: userImg, imagen: absolutePath}))
             await page.setContent(content)
@@ -359,7 +359,7 @@ const imprimirCronologico = async(req, res)=>{
     const puppeter = require('puppeteer');
     (async function(){
         try{
-            const browser = await puppeter.launch()
+            const browser = await puppeter.launch({ args: ['--no-sandbox'] })
             const page = await browser.newPage()
             const content = await compile('cronologicoPDF', ({personal : personal, laboralData: laboralData, user: user, descripcionData: descripcionData, userImg: userImg, imagen: absolutePath}))
             await page.setContent(content)
@@ -398,7 +398,7 @@ const imprimirFuncional = async(req, res)=>{
     const puppeter = require('puppeteer');
     (async function(){
         try{
-            const browser = await puppeter.launch()
+            const browser = await puppeter.launch({ args: ['--no-sandbox'] })
             const page = await browser.newPage()
             const content = await compile('funcionalPDF', ({personal : personal, laboralData: laboralData, user: user, descripcionData: descripcionData, userImg: userImg, imagen: absolutePath}))
             await page.setContent(content)
@@ -437,7 +437,7 @@ const imprimirMixto = async(req, res)=>{
     const puppeter = require('puppeteer');
     (async function(){
         try{
-            const browser = await puppeter.launch()
+            const browser = await puppeter.launch({ args: ['--no-sandbox'] })
             const page = await browser.newPage()
             const content = await compile('mixtoPDF', ({personal : personal, laboralData: laboralData, user: user, descripcionData: descripcionData, userImg: userImg, imagen: absolutePath}))
             await page.setContent(content)
@@ -476,7 +476,7 @@ const imprimirModerno2 = async(req, res)=>{
     const puppeter = require('puppeteer');
     (async function(){
         try{
-            const browser = await puppeter.launch()
+            const browser = await puppeter.launch({ args: ['--no-sandbox'] })
             const page = await browser.newPage()
             const content = await compile('moderno2PDF', ({personal : personal, laboralData: laboralData, user: user, descripcionData: descripcionData, userImg: userImg, imagen: absolutePath}))
             await page.setContent(content)
@@ -515,7 +515,7 @@ const imprimirCreativo2 = async(req, res)=>{
     const puppeter = require('puppeteer');
     (async function(){
         try{
-            const browser = await puppeter.launch()
+            const browser = await puppeter.launch({ args: ['--no-sandbox'] })
             const page = await browser.newPage()
             const content = await compile('creativo2PDF', ({personal : personal, laboralData: laboralData, user: user, descripcionData: descripcionData, userImg: userImg, imagen: absolutePath}))
             await page.setContent(content)
@@ -554,7 +554,7 @@ const imprimirModerno3= async(req, res)=>{
     const puppeter = require('puppeteer');
     (async function(){
         try{
-            const browser = await puppeter.launch()
+            const browser = await puppeter.launch({ args: ['--no-sandbox'] })
             const page = await browser.newPage()
             const content = await compile('moderno3PDF', ({personal : personal, laboralData: laboralData, user: user, descripcionData: descripcionData, userImg: userImg, imagen: absolutePath}))
             await page.setContent(content)
