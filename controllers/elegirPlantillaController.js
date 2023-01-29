@@ -3,6 +3,7 @@ const LaboralData = require('../models/LaboralData')
 const PersonalData = require('../models/PersonalData')
 const Plantilla = require('../models/Plantilla')
 const User = require('../models/User')
+const puppeter = require('puppeteer');
 const fs = require('fs-extra')
 const path = require('path')
 const hbs = require('hbs');
@@ -238,7 +239,6 @@ const imprimirBasico = async(req, res)=>{
         return hbs.compile(html)({personal : personal, laboralData: laboralData, user: user, descripcionData: descripcionData, userImg: userImg, imagen: absolutePath})
     };
     //Puppeter
-    const puppeter = require('puppeteer');
     (async function(){
         try{
             const browser = await puppeter.launch()
