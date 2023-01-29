@@ -7,6 +7,8 @@ const fs = require('fs-extra')
 const path = require('path')
 const hbs = require('hbs');
 
+const browser = await puppeter.launch({ args: ['--no-sandbox'] })
+
 //Guarda la plantilla seleccionada
 const agregarPlantilla = async(req, res)=>{
     const {elegirPlantilla} = req.body
