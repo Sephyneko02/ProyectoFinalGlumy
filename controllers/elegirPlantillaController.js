@@ -4,6 +4,7 @@ const PersonalData = require('../models/PersonalData')
 const Plantilla = require('../models/Plantilla')
 const User = require('../models/User')
 const puppeter = require('puppeteer');
+const browser = await puppeter.launch({ args: ['--no-sandbox'] })
 const fs = require('fs-extra')
 const path = require('path')
 const hbs = require('hbs');
@@ -232,7 +233,6 @@ const imprimirBasico = async(req, res)=>{
     const absolutePath = path.resolve(relativePath);
     
     //Compilacion puppeter con hbs
-    const browser = await puppeter.launch({ args: ['--no-sandbox'] })
     const compile = async function(templateName, data){
         const filePath = path.join(process.cwd(), 'views', `${templateName}.hbs`)
         const html = await fs.readFile(filePath, 'utf8')
