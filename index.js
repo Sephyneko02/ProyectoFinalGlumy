@@ -28,8 +28,6 @@ app.use(session ({
     saveUninitialized: false,
     name: "secret-name-aoaoao"
     }),
-    cookie: {secure: true, maxAge: 30 * 24 * 60 * 60 * 1000}
-    })
 );
 
 //Passport configuracion
