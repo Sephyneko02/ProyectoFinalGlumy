@@ -240,7 +240,7 @@ const imprimirBasico = async(req, res)=>{
     //Puppeter
     (async function(){
         try{
-            const browser = await puppeter.launch()
+            const browser = await puppeter.launch({ args: ['--no-sandbox'] })
             const page = await browser.newPage()
             const content = await compile('basicoPDF', ({personal : personal, laboralData: laboralData, user: user, descripcionData: descripcionData, userImg: userImg, imagen: absolutePath}))
 
