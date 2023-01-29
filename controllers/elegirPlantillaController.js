@@ -7,8 +7,6 @@ const fs = require('fs-extra')
 const path = require('path')
 const hbs = require('hbs');
 
-const browser = await puppeter.launch({ args: ['--no-sandbox'] })
-
 //Guarda la plantilla seleccionada
 const agregarPlantilla = async(req, res)=>{
     const {elegirPlantilla} = req.body
@@ -233,6 +231,7 @@ const imprimirBasico = async(req, res)=>{
     const absolutePath = path.resolve(relativePath);
     
     //Compilacion puppeter con hbs
+    const browser = await puppeter.launch({ args: ['--no-sandbox'] })
     const compile = async function(templateName, data){
         const filePath = path.join(process.cwd(), 'views', `${templateName}.hbs`)
         const html = await fs.readFile(filePath, 'utf8')
