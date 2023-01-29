@@ -4,7 +4,6 @@ const PersonalData = require('../models/PersonalData')
 const Plantilla = require('../models/Plantilla')
 const User = require('../models/User')
 const puppeter = require('puppeteer');
-const browser = await puppeter.launch({ args: ['--no-sandbox'] })
 const fs = require('fs-extra')
 const path = require('path')
 const hbs = require('hbs');
