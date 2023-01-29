@@ -253,6 +253,7 @@ const imprimirBasico = async(req, res)=>{
             res.redirect(`https://proyectofinalglumy-production.up.railway.app/pdfs/${req.user.id}.pdf`)
         }
         catch(error){
+            console.log(error)
             req.flash("mensajes", [{msg: "Hubo un error al crear al crear el PDF"}])
             return res.redirect('/elegirPlantilla/soloElegirPlantilla')
         }
